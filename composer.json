@@ -1,0 +1,28 @@
+{
+    "name": "nycu-csit/spatie-laravel-query-builder-extension",
+    "description": "NYCU CSIT custom filters for spatie/laravel-query-builder",
+    "require": {
+        "spatie/laravel-query-builder": "^6.3",
+        "laravel/framework": "^12.16"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^10.3",
+        "phpunit/phpunit": "^11.5"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "NycuCsit\\SpatieLaravelQueryBuilderExtension\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "NycuCsit\\SpatieLaravelQueryBuilderExtension\\Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "lint": "phpcs",
+        "lint:fix": "phpcbf",
+        "test": "./vendor/bin/phpunit"
+    }
+}
